@@ -1,9 +1,24 @@
-public class PokemonRunner {
+/**
+ * A Pokemon battle simulator.
+ * Currently text based, with a menu system controlled by number keys.
+ * Only one player pokemon available currently: Treecko.
+ * Only one npc pokemon available currently: Mudkip.
+ * Items currently available: Power Potion and Mana Potion.
+ * Attack lists for Pokemon are selected from their early-learned attacks in the pokemon games,
+ * specifically choosing attacks of different types.
+ * Using type-based modifiers for attacks and their items, the player (user) battles their npc opponent until one of them faints or runs away.
+ * Npc actions are randomly generated, more likely to attack than use their item or run away from battle.
+ * 
+ * Originally created for a lab assignment in College of Staten Island course:
+ * CSC-330: Object-oriented Programming
+ * but I have decided to expand upon the assignment and turn it into a personal side project.
+ *   
+ * @author Joseph LaMantia
+ *
+ */
 
-	//Joseph LaMantia
-	// CSC 330
-	// Lab 3 Pokemon
-	// PokemonRunner.java
+
+public class PokemonRunner {
 	public static void main(String[] args) {
 		
 		//create players
@@ -18,7 +33,8 @@ public class PokemonRunner {
 	}
 	
 	/**
-	 * Introduces user to the program, explaining the controls.
+	 * Introduces user to the program, explaining the controls and battle details.
+	 * Welcomes the user.
 	 * Informs player (user) what item and pokemon they have been equipped with.
 	 * Uses the players pokemons .speak() method
 	 * Informs player what pokemon their npc opponent has been equipped with. (Does not reveal which item.)
