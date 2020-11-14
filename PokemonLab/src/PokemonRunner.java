@@ -56,7 +56,7 @@ public class PokemonRunner {
 	}
 	
 	/**
-	 * Uses the Player.act method in a turn-based order, checking whether or not the game has ended with each turn.
+	 * Uses the Player.act method in a turn-based order, beginning with the player, and checking whether or not the game has ended with each turn.
 	 * @param player Player instance variable
 	 * @param npc Player instance variable
 	 */
